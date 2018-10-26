@@ -18,7 +18,9 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ViewHolder> {
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
+public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ViewHolder> implements View.OnClickListener {
 
     private ArrayList<House> ls;
     private Context context;
@@ -41,20 +43,20 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int i) {
-        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                intent = new Intent(viewHolder.itemView.getContext(), DetailActivity.class);
-                viewHolder.itemView.getContext().startActivity(intent);
-            }
-        });
+        viewHolder.itemView.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        intent = new Intent(context, DetailActivity.class);
+        intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
     }
 
     @Override
     public int getItemCount() {
         return ls.size();
     }
-
 
     class ViewHolder extends RecyclerView.ViewHolder {
         private CircleImageView ivAvatar;

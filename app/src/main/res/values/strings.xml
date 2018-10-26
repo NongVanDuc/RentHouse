@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">RentHouse</string>
+    <string name="app_name">Rent House</string>
+    <string name="app_message">An Cư mới lạc nghiệp</string>
+    <string name="app_login">Login with FaceBook</string>
+    <string name="detail_title">Detail</string>
+    <string name="detail_default_name">Nguyễn Diệp Huấn</string>
+    <string name="detail_default_phone">Contact: 098123456</string>
+    <string name="detail_default_address">157 Bà Triệu</string>
+    <string name="detail_default_description">Đây là 1 sự miêu tả</string>
+    <string name="detail_default_price">$2300/month</string>
+    <string name="detail_opportunities">Opportunities</string>
+    <string name="detail_default_bed">3 Beds</string>
+    <string name="detail_default_bath">3 Baths</string>
+    <string name="detail_default_floor">3 Floors</string>
 </resources>

@@ -1,89 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/bg_home"
-tools:context=".view.activity.OptionActivity">
-<LinearLayout
-    android:id="@+id/lr_logo"
-    android:layout_margin="20dp"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/img_logo"
-        android:src="@drawable/houselogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/tv_logo"
-        android:layout_below="@+id/img_logo"
-        android:textColor="#8E4CF2"
-        android:text="Rent House"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_below="@+id/tv_app_name"
-        android:textColor="#8E4CF2"
-        android:text="An Cư mới lạc nghiệp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</LinearLayout>
-<LinearLayout
-    android:id="@+id/lr_input"
-    android:padding="10dp"
-    android:layout_below="@+id/lr_logo"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:textColor="#8E4CF2"
-        android:text="Quận bạn muốn:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:textColor="#8E4CF2"
-        android:text="Phường bạn muốn:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
-<LinearLayout
-    android:layout_marginTop="50dp"
-    android:layout_centerHorizontal="true"
-    android:layout_below="@+id/lr_input"
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <Button
-        android:textColor="@color/white"
-        android:text="Cho thuê"
-        android:background="#6100ED"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".view.activity.OptionActivity">
 
-    <Button
-        android:layout_marginLeft="100dp"
+    <LinearLayout
+        android:id="@+id/lr_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="#03DAC6"
-        android:text="Đi thuê"
-        android:textColor="@color/white" />
-</LinearLayout>
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/houselogo" />
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo"
+            android:text="Rent House"
+            android:textColor="#8E4CF2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_app_name"
+            android:text="An Cư mới lạc nghiệp"
+            android:textColor="#8E4CF2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lr_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lr_logo"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quận bạn muốn:"
+            android:textColor="#8E4CF2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phường bạn muốn:"
+            android:textColor="#8E4CF2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lr_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6100ED"
+            android:text="Cho thuê"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="100dp"
+            android:background="#03DAC6"
+            android:text="Đi thuê"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
         android:layout_margin="20dp"
         android:text="Coppy right by Andrew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="@color/colorWhite" />
 </RelativeLayout>

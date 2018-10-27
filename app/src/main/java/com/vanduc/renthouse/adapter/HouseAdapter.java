@@ -43,6 +43,8 @@ public class HouseAdapter extends RecyclerView.Adapter<HouseAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int i) {
+        viewHolder.itemView.setPadding(5,5,5,5);
+
         viewHolder.itemView.setOnClickListener(this);
     }
 

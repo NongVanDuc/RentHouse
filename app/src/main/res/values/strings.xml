@@ -17,4 +17,8 @@
     <string name="coppy_right_by_andrew">Coppy right by Andrew</string>
     <string name="option_title_district">Quận bạn muốn:</string>
     <string name="option_title_ward">Phường bạn muốn:</string>
+    <string name="detail_default_rent">Rent</string>
+    <string name="detail_default_save">Save</string>
+    <string name="detail_default_map">Map</string>
+    <string name="save_title">Save</string>
 </resources>

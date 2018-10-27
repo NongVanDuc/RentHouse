@@ -11,6 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
         app:title="@string/detail_title" />
 
     <View
@@ -27,8 +28,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/viewTop">
+            android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/ivAvatar"
@@ -152,6 +152,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/layoutOpportunities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvOpportunities"
@@ -159,36 +160,105 @@
                 android:orientation="horizontal"
                 android:weightSum="3">
 
-                <Button
-                    android:id="@+id/btBed"
+                <TextView
+                    android:id="@+id/tvBed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/layout_text_opportunities"
                     android:drawableStart="@drawable/ic_bed"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
                     android:text="@string/detail_default_bed"
                     android:textAllCaps="false"
+                    android:textStyle="bold"
                     tools:ignore="ButtonStyle,InefficientWeight" />
 
-                <Button
-                    android:id="@+id/btBath"
+                <TextView
+                    android:id="@+id/tvBath"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/layout_text_opportunities"
                     android:drawableStart="@drawable/ic_bath"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
                     android:text="@string/detail_default_bath"
                     android:textAllCaps="false"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle,InefficientWeight" />
+
+                <TextView
+                    android:id="@+id/tvFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_text_opportunities"
+                    android:drawableStart="@drawable/ic_floor"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/detail_default_floor"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle,InefficientWeight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutOpportunities"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_button_option"
+                    android:drawableStart="@drawable/ic_map"
+                    android:drawableTint="@color/colorWhite"
+                    android:padding="5dp"
+                    android:text="@string/detail_default_map"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
                     tools:ignore="ButtonStyle,InefficientWeight" />
 
                 <Button
-                    android:id="@+id/btFloor"
+                    android:id="@+id/btSave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:drawableStart="@drawable/ic_floor"
-                    android:text="@string/detail_default_floor"
+                    android:background="@drawable/layout_button_option"
+                    android:drawableStart="@drawable/ic_save"
+                    android:drawableTint="@color/colorWhite"
+                    android:padding="5dp"
+                    android:text="@string/detail_default_save"
                     android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
                     tools:ignore="ButtonStyle,InefficientWeight" />
 
+                <Button
+                    android:id="@+id/btRent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_button_option"
+                    android:drawableStart="@drawable/ic_rent"
+                    android:drawableTint="@color/colorWhite"
+                    android:padding="5dp"
+                    android:text="@string/detail_default_rent"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    tools:ignore="ButtonStyle,InefficientWeight" />
             </LinearLayout>
 
         </RelativeLayout>

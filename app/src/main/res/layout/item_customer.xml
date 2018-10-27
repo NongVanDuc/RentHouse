@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginBottom="7dp"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/houserent"
+        android:id="@+id/img_infor"
+        android:layout_width="80dp"
+        android:layout_height="70dp" />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tv_address"
+        android:layout_toRightOf="@+id/img_infor"
+        android:textSize="14sp"
+        android:textColor="#4d4b4b"
+        android:textStyle="bold"
+        android:text="157 Bà Triệu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_address_detail"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="Greyhound divisively hello…"
+        android:layout_below="@+id/tv_address"
+        android:layout_toRightOf="@+id/img_infor"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:textColor="#4d4b4b"
+        android:textStyle="bold"
+        android:id="@+id/tv_name_customer"
+        android:layout_alignParentRight="true"
+        android:text="Nguyễn Thành Công"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_name_customer"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="14sp"
+            android:text="Contact : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/tv_contact"
+            android:text="0972467493"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

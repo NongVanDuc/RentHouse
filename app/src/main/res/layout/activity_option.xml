@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,21 +18,20 @@
             android:id="@+id/img_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/houselogo" />
+            android:src="@drawable/houselogo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/tv_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/img_logo"
-            android:text="Rent House"
+            android:text="@string/app_name"
             android:textColor="#8E4CF2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_app_name"
-            android:text="An Cư mới lạc nghiệp"
+            android:text="@string/app_message"
             android:textColor="#8E4CF2" />
     </LinearLayout>
 
@@ -48,47 +46,62 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quận bạn muốn:"
+            android:text="@string/option_title_district"
             android:textColor="#8E4CF2" />
 
         <EditText
+            android:id="@+id/etDistrict"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="Autofill,LabelFor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phường bạn muốn:"
+            android:text="@string/option_title_ward"
             android:textColor="#8E4CF2" />
 
         <EditText
+            android:id="@+id/etWard"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="Autofill,LabelFor" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lr_input"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <Button
+            android:id="@+id/btChoThue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#6100ED"
-            android:text="Cho thuê"
-            android:textColor="@color/colorWhite" />
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_button_cho_thue"
+            android:text="@string/option_button_cho_thue"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            tools:ignore="ButtonStyle" />
 
         <Button
+            android:id="@+id/btDiThue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginLeft="100dp"
-            android:background="#03DAC6"
-            android:text="Đi thuê"
-            android:textColor="@color/colorWhite" />
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_button_di_thue"
+            android:text="@string/option_button_di_thue"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            tools:ignore="ButtonStyle" />
     </LinearLayout>
 
     <TextView
@@ -96,6 +109,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:text="Coppy right by Andrew"
+        android:text="@string/coppy_right_by_andrew"
         android:textColor="@color/colorWhite" />
 </RelativeLayout>

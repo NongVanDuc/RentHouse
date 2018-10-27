@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/detail_default_address"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorButtonDiThue"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
         android:layout_alignParentEnd="true"
         android:gravity="center_vertical"
         android:text="@string/detail_default_price"
-        android:textColor="@color/colorAccent"
+        android:textColor="#8FED00"
         android:textSize="16sp"
         android:textStyle="italic|bold"
         tools:ignore="RelativeOverlap" />

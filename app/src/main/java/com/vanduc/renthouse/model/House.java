@@ -6,8 +6,9 @@ public class House {
     String image1, image2, image3;
     String address, description, price;
     String bed, bath, floor;
+    String type;
 
-    public House(String id, String name, String phone, String image1, String image2, String image3, String address, String description, String price, String bed, String bath, String floor) {
+    public House(String id, String name, String phone, String image1, String image2, String image3, String address, String description, String price, String bed, String bath, String floor, String type) {
         this.id = id;
         this.name = name;
         this.phone = phone;
@@ -20,6 +21,26 @@ public class House {
         this.bed = bed;
         this.bath = bath;
         this.floor = floor;
+        this.type = type;
+    }
+
+    public House(String id, String image1, String address, String description, String price, String type) {
+        this.id = id;
+        this.image1 = image1;
+        this.address = address;
+        this.description = description;
+        this.price = price;
+        this.type = type;
+    }
+
+    public House(String id, String name, String phone, String image1, String address, String description, String type) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.image1 = image1;
+        this.address = address;
+        this.description = description;
+        this.type = type;
     }
 
     public House() {
@@ -120,5 +141,13 @@ public class House {
 
     public void setFloor(String floor) {
         this.floor = floor;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

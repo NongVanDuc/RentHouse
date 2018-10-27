@@ -21,4 +21,6 @@
     <string name="detail_default_save">Save</string>
     <string name="detail_default_map">Map</string>
     <string name="save_title">Save</string>
+    <string name="rent_title">Rent</string>
+    <string name="item_rent_saled">Saled</string>
 </resources>

@@ -30,8 +30,42 @@
             android:layout_height="match_parent">
 
             <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewSave"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="275dp"
+                android:padding="5dp"
+                tools:listitem="@layout/item_save" />
+
+            <View
+                android:id="@+id/viewTopRent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/recyclerViewSave"
+                android:background="@color/colorLightGray" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewTopRent"
+                android:background="@color/colorWhite"
+                app:title="@string/rent_title" />
+
+            <View
+                android:id="@+id/viewBottomRent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/toolbarRent"
+                android:background="@color/colorLightGray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewBottomRent"
+                android:padding="5dp"
+                android:scrollbars="none"
+                tools:listitem="@layout/item_rent" />
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>

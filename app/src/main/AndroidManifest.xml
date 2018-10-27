@@ -27,8 +27,11 @@
         <activity
             android:name=".view.activity.DetailActivity"
             android:parentActivityName=".view.activity.MainActivity" />
-         <activity android:name=".view.activity.ActivitySaleHouse"></activity>
-        <activity android:name=".view.activity.ActivityCustomer"></activity>
+        <activity
+            android:name=".view.activity.SaveActivity"
+            android:parentActivityName=".view.activity.DetailActivity" />
+        <activity android:name=".view.activity.ActivityCustomer" />
+        <activity android:name=".view.activity.ActivitySaleHouse" />
     </application>
 
 </manifest>

@@ -23,7 +23,7 @@
                 android:layout_below="@id/viewTop"
                 android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
-                android:background="@color/colorAccent" />
+                android:src="@drawable/ic_avatar"/>
 
             <TextView
                 android:id="@+id/tvName"
@@ -59,7 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/colorAccent"
+                    android:src="@drawable/houserent"
+                    android:scaleType="centerCrop"
                     tools:ignore="ContentDescription" />
 
                 <LinearLayout
@@ -74,7 +75,8 @@
                         android:layout_width="200dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:background="@color/colorLightGray"
+                        android:src="@drawable/houserent"
+                        android:scaleType="centerCrop"
                         tools:ignore="ContentDescription" />
 
                     <ImageView
@@ -82,7 +84,8 @@
                         android:layout_width="200dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:background="@color/colorGray"
+                        android:src="@drawable/houserent"
+                        android:scaleType="centerCrop"
                         tools:ignore="ContentDescription" />
                 </LinearLayout>
 
@@ -121,6 +124,7 @@
                 android:layout_margin="10dp"
                 android:text="@string/detail_default_description"
                 android:textSize="14sp"
+                android:textColor="@color/colorGray"
                 android:textStyle="italic" />
 
         </RelativeLayout>

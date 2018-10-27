@@ -24,8 +24,11 @@
         <activity
             android:name=".view.activity.LoginActivity"
             android:theme="@style/LoginTheme" />
-        <activity android:name=".view.activity.DetailActivity"
-            android:parentActivityName=".view.activity.MainActivity"/>
+        <activity
+            android:name=".view.activity.DetailActivity"
+            android:parentActivityName=".view.activity.MainActivity" />
+         <activity android:name=".view.activity.ActivitySaleHouse"></activity>
+        <activity android:name=".view.activity.ActivityCustomer"></activity>
     </application>
 
 </manifest>

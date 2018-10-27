@@ -12,4 +12,16 @@
     <string name="detail_default_bed">3 Beds</string>
     <string name="detail_default_bath">3 Baths</string>
     <string name="detail_default_floor">3 Floors</string>
+    <string name="sale_house">Sale House</string>
+    <string name="post">Đăng tin cho thuê</string>
+    <string name="address">Địa chỉ nhà :</string>
+    <string name="address_state">Phường :</string>
+    <string name="address_state1">Quận :</string>
+    <string name="phone_number">Số điện thoại :</string>
+    <string name="price">Giá cho thuê :</string>
+    <string name="content">Nội dung miêu tả :</string>
+    <string name="number_room">Số phòng ngủ :</string>
+    <string name="number_bathroom">Số phòng tắm :</string>
+    <string name="number_flooor">Số tầng :</string>
+    <string name="customer">Customer</string>
 </resources>

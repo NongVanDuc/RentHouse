@@ -38,7 +38,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = inflater.inflate(R.layout.item_customer, null); // Hihihi
+        View view = inflater.inflate(R.layout.item_customer, null); // Huhuhu
         return new ViewHolder(view);
     }
 

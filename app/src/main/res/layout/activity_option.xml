@@ -49,12 +49,11 @@
             android:text="@string/option_title_district"
             android:textColor="#8E4CF2" />
 
-        <EditText
-            android:id="@+id/etDistrict"
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/spiner_state"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            tools:ignore="Autofill,LabelFor" />
+            android:layout_height="50dp"></Spinner>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,12 +61,11 @@
             android:text="@string/option_title_ward"
             android:textColor="#8E4CF2" />
 
-        <EditText
-            android:id="@+id/etWard"
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/spiner_state1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            tools:ignore="Autofill,LabelFor" />
+            android:layout_height="50dp"></Spinner>
     </LinearLayout>
 
     <LinearLayout
@@ -85,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/layout_button_cho_thue"
+            android:background="@drawable/btn_cho_thue"
             android:text="@string/option_button_cho_thue"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
@@ -97,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/layout_button_di_thue"
+            android:background="@drawable/btn_di_thue"
             android:text="@string/option_button_di_thue"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
@@ -108,6 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:text="@string/coppy_right_by_andrew"
         android:textColor="@color/colorWhite" />

@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content">
                     <ImageView
                         android:id="@+id/img_picker_image"
-                        android:src="@drawable/ic_image_black_24dp"
+                        android:src="@drawable/image"
                         android:layout_width="70dp"
                         android:layout_margin="10dp"
                         android:layout_height="70dp" />
@@ -190,11 +190,11 @@
                         android:textAllCaps="false"
                         android:id="@+id/btn_upload_image"
                         android:text="Upload Image"
-                        android:textColor="#6100ED"
+                        android:textColor="@color/colorWhite"
                         android:padding="10dp"
-                        android:background="@drawable/rounded_button"
+                        android:background="@drawable/button_upload_image"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp" />
+                        android:layout_height="60dp" />
                     <Button
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"

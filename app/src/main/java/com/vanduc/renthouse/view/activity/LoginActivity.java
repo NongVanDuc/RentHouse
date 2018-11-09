@@ -82,6 +82,8 @@ public class LoginActivity extends AppCompatActivity implements FacebookCallback
         editor.putBoolean("isLogin", true);
         editor.apply();
         intent = new Intent(this, MainActivity.class);
+
+        intent = new Intent(this, OptionActivity.class);
         startActivity(intent);
         finish();
     }

@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements MainCallback {
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
 
         mainPresenter = new MainPresenter(this);
         mainPresenter.setSetListener(this);

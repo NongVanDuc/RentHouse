@@ -1,5 +1,6 @@
 package com.vanduc.renthouse.view.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 
 import com.vanduc.renthouse.R;
 
-public class ActivitySaleHouse extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class ActivitySaleHouse extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
     private Toolbar toolbar;
     private TextView tvPost;
     private EditText edtAddressHouse;
@@ -70,6 +71,7 @@ public class ActivitySaleHouse extends AppCompatActivity implements AdapterView.
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinerState1.setAdapter(adapter2);
         spinerState1.setOnItemSelectedListener(this);
+        btnUpPots.setOnClickListener(this);
     }
 
     @Override
@@ -90,5 +92,15 @@ public class ActivitySaleHouse extends AppCompatActivity implements AdapterView.
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_up_pots:
+                Intent intent = new Intent(this,ActivityCustomer.class);
+                startActivity(intent);
+                break;
+        }
     }
 }

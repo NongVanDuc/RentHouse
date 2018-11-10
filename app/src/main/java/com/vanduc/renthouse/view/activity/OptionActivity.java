@@ -86,7 +86,7 @@ public class OptionActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btDiThue:
-                Intent intent = new Intent(this, MainActivity.class);
+                Intent intent = new Intent(this, DrawerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btChoThue:

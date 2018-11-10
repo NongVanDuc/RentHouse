@@ -31,7 +31,7 @@ public class SaveActivity extends AppCompatActivity implements SaveCallback {
 
     //LayoutManager
     private LinearLayoutManager llm;
-    private GridLayoutManager glm;
+    private LinearLayoutManager glm;
 
     //Presenter
     protected SavePresenter savePresenter;
@@ -63,7 +63,7 @@ public class SaveActivity extends AppCompatActivity implements SaveCallback {
         savePresenter.getAllRent();
 
         llm = new LinearLayoutManager(this);
-        glm = new GridLayoutManager(this, 2);
+        glm = new LinearLayoutManager(this);
         recyclerViewSave.setLayoutManager(llm);
         recyclerViewRent.setLayoutManager(glm);
 

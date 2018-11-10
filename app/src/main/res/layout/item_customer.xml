@@ -15,12 +15,13 @@
         android:id="@+id/tv_address"
         android:layout_toRightOf="@+id/img_infor"
         android:textSize="14sp"
-        android:textColor="#4d4b4b"
+        android:textColor="@color/colorButtonDiThue"
         android:textStyle="bold"
         android:text="157 Bà Triệu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
+        android:textColor="@color/gray_text_color"
         android:id="@+id/tv_address_detail"
         android:layout_marginLeft="5dp"
         android:textSize="12sp"
@@ -32,7 +33,7 @@
     <TextView
         android:layout_margin="5dp"
         android:textSize="14sp"
-        android:textColor="#4d4b4b"
+        android:textColor="@color/colorButtonDiThue"
         android:textStyle="bold"
         android:id="@+id/tv_name_customer"
         android:layout_alignParentRight="true"
@@ -47,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <TextView
+            android:textColor="@color/gray_text_color"
             android:textSize="14sp"
             android:text="Contact : "
             android:layout_width="wrap_content"

@@ -12,4 +12,6 @@
     <color name="colorGreen">#33FF66</color>
     <color name="colorButtonChoThue">#6100ED</color>
     <color name="colorButtonDiThue">#03DAC6</color>
+    <color name="colorBgMenu">#dbfbebff</color>
+    <color name="colorTextMenu">#9600ba</color>
 </resources>

@@ -34,7 +34,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.activity.DrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,12 +47,16 @@
             android:theme="@style/LoginTheme" />
         <activity
             android:name=".view.activity.DetailActivity"
-            android:parentActivityName=".view.activity.MainActivity" />
+            android:parentActivityName=".view.activity.DetailActivity" />
         <activity
             android:name=".view.activity.SaveActivity"
             android:parentActivityName=".view.activity.DetailActivity" />
         <activity android:name=".view.activity.ActivityCustomer" />
         <activity android:name=".view.activity.ActivitySaleHouse" />
+        <!--<activity-->
+            <!--android:name=".view.activity.DrawerActivity"-->
+            <!--android:label="@string/title_activity_drawer"-->
+            <!--android:theme="@style/AppTheme"></activity>-->
     </application>
 
 </manifest>

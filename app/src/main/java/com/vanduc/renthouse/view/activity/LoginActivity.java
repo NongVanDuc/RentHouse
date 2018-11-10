@@ -2,9 +2,14 @@ package com.vanduc.renthouse.view.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
+import android.util.Log;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -13,6 +18,9 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.vanduc.renthouse.R;
 import com.vanduc.renthouse.presenter.LoginPresenter;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class LoginActivity extends AppCompatActivity implements FacebookCallback<LoginResult> {
 
@@ -54,25 +62,25 @@ public class LoginActivity extends AppCompatActivity implements FacebookCallback
 
         btLogin.registerCallback(callbackManager, this);
         btLogin.setReadPermissions("email");
-
-        /*PackageInfo info;
-        try {
-            info = getPackageManager().getPackageInfo("com.vanduc.renthouse", PackageManager.GET_SIGNATURES);
-            for (Signature signature : info.signatures) {
-                MessageDigest md;
-                md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                String something = new String(Base64.encode(md.digest(), 0));
-                //String something = new String(Base64.encodeBytes(md.digest()));
-                Log.e("hash key", something);
-            }
-        } catch (PackageManager.NameNotFoundException e1) {
-            Log.e("name not found", e1.toString());
-        } catch (NoSuchAlgorithmException e) {
-            Log.e("no such an algorithm", e.toString());
-        } catch (Exception e) {
-            Log.e("exception", e.toString());
-        }*/
+//
+//        PackageInfo info;
+//        try {
+//            info = getPackageManager().getPackageInfo("com.vanduc.renthouse", PackageManager.GET_SIGNATURES);
+//            for (Signature signature : info.signatures) {
+//                MessageDigest md;
+//                md = MessageDigest.getInstance("SHA");
+//                md.update(signature.toByteArray());
+//                String something = new String(Base64.encode(md.digest(), 0));
+//                //String something = new String(Base64.encodeBytes(md.digest()));
+//                Log.e("hash key", something);
+//            }
+//        } catch (PackageManager.NameNotFoundException e1) {
+//            Log.e("name not found", e1.toString());
+//        } catch (NoSuchAlgorithmException e) {
+//            Log.e("no such an algorithm", e.toString());
+//        } catch (Exception e) {
+//            Log.e("exception", e.toString());
+//        }
 
     }
 
@@ -81,7 +89,7 @@ public class LoginActivity extends AppCompatActivity implements FacebookCallback
         editor = share.edit();
         editor.putBoolean("isLogin", true);
         editor.apply();
-        intent = new Intent(this, MainActivity.class);
+        intent = new Intent(this, DrawerActivity.class);
 
         intent = new Intent(this, OptionActivity.class);
         startActivity(intent);
